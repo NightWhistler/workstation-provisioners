@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 current_directory=$(pwd)
 
 # Copy stdout to a log file
@@ -21,10 +20,6 @@ lib="${current_directory}/lib"
 scripts="${current_directory}/scripts"
 
 
-# execute the fix ubuntu script to ensure additional privacy
-. ${lib}/fixubuntu.sh > /dev/null
-cd ${current_directory}
-
 # load utility functions
 . ${helpers}/utilities.sh > /dev/null
 cd ${current_directory}
@@ -43,7 +38,8 @@ print_line "2. Install Packages ###############################################"
 sudo -E debconf-set-selections <<< "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true"
 
 # run the package installation script
-. ${scripts}/install.sh > /dev/null
+#. ${scripts}/install.sh > /dev/null
+. ${scripts}/install.sh 
 cd ${current_directory}
 
 
@@ -74,3 +70,10 @@ sudo ln -s ./.themes /root/.themes
 cp ~/.bashrc ~/.bashrc.backup
 echo 'export VISUAL="vim"' | tee --append "${HOME}/.bashrc"
 echo 'export EDITOR="${VISUAL}"' | tee --append "${HOME}/.bashrc"
+
+print_line "3. Install Ubuntu Privacy Fixes ###################################"
+# execute the fix ubuntu script to ensure additional privacy
+. ${lib}/fixubuntu.sh > /dev/null
+cd ${current_directory}
+
+

@@ -4,9 +4,11 @@
 # packages to be installed
 # note: packages will be installed in this order
 packages=(
+    
+    #Basic desktop
+    ubuntu-desktop
 
     # System Utilities
-    cinnamon
     fluxgui
     gksu
     gnome-tweak-tool

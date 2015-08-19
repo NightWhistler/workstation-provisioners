@@ -12,7 +12,7 @@ SHOW_GUI = true
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Vagrant box to build on
-    config.vm.box = "drmyersii/ubuntu-desktop-14.04-x64"
+    config.vm.box = "ubuntu/trusty64"
 
     # settings for VirtualBox provider
     config.vm.provider "virtualbox" do |v|
