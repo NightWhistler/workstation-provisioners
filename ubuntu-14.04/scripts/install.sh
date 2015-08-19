@@ -61,6 +61,7 @@ packages=(
     audacious
     audacity
     vlc
+    spotify
 
     # Other Utilities
     conduit
