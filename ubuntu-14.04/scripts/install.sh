@@ -20,6 +20,8 @@ packages=(
     ppa-purge
     ubuntu-restricted-extras
     unity-tweak-tool
+    owncloud-client
+
 
     # Command Line Utilities
     htop
@@ -31,6 +33,7 @@ packages=(
     openssh-server
 
     # Development Tools
+    docker
     android-studio
     atom
     brackets
@@ -45,7 +48,7 @@ packages=(
     sublime-text
     subversion
     vagrant
-    vim
+    vim gvim
     virtualbox
     visual-studio-code
     zeal
