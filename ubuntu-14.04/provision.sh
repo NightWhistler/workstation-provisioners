@@ -51,20 +51,20 @@ mkdir -p "bin" "Projects" ".icons" ".themes"
 echo 'export PATH=${PATH}:${HOME}/bin' | tee --append "${HOME}/.bashrc"
 
 # download icon packs
-cd ./.icons
-git clone https://github.com/NitruxSA/flattr-icons.git
-git clone https://github.com/xcjs/flattr-dark.git
-cd ..
+#cd ./.icons
+#git clone https://github.com/NitruxSA/flattr-icons.git
+#git clone https://github.com/xcjs/flattr-dark.git
+#cd ..
 
 # download themes
-cd ./.themes
-git clone https://github.com/wfpaisa/Plane-Gtk3.git
-git clone https://github.com/wfpaisa/Plane-Gtk3-White.git
-cd ..
+#cd ./.themes
+#git clone https://github.com/wfpaisa/Plane-Gtk3.git
+#git clone https://github.com/wfpaisa/Plane-Gtk3-White.git
+#cd ..
 
 # symlink the themes and icon packs into root directories
-sudo ln -s ./.icons /root/.icons
-sudo ln -s ./.themes /root/.themes
+#sudo ln -s ./.icons /root/.icons
+#sudo ln -s ./.themes /root/.themes
 
 # set vim as the default editor
 cp ~/.bashrc ~/.bashrc.backup

@@ -22,7 +22,6 @@ packages=(
     unity-tweak-tool
     owncloud-client
 
-
     # Command Line Utilities
     htop
     realpath
@@ -34,7 +33,8 @@ packages=(
 
     # Development Tools
     docker
-    android-studio
+    java8
+    intellij
     atom
     brackets
     build-essential
@@ -42,15 +42,12 @@ packages=(
     filezilla
     git git-svn hub
     meld
-    monodevelop
-    monodoc-manual
     openjdk-7-jdk openjdk-7-jre
     sublime-text
     subversion
     vagrant
-    vim gvim
+    vim vim-gtk
     virtualbox
-    visual-studio-code
     zeal
 
     # Graphics
@@ -65,9 +62,7 @@ packages=(
 
     # Other Utilities
     conduit
-    consolas
     google-chrome
-    insync
     keepassx
     p7zip-full
     remmina
