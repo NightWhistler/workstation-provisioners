@@ -35,11 +35,12 @@ packages=(
     # Development Tools
     docker
     java8
+    groovy
+    scala
+    maven
+    gradle
     intellij
-    atom
-    brackets
     build-essential
-    codeblocks
     filezilla
     git git-svn hub
     meld
@@ -63,7 +64,6 @@ packages=(
     spotify
 
     # Other Utilities
-    conduit
     google-chrome
     keepassx
     p7zip-full
