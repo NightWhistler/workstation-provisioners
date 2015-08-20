@@ -9,7 +9,7 @@ cd ~/bin
 
 # JetBrains
 
-INTELLIJDOWNLOAD=ideaIU-14.1.2.tar.gz
+INTELLIJDOWNLOAD=ideaIU-14.1.4.tar.gz
 
 INTELLIJINSTALL=intellij-ide
 
