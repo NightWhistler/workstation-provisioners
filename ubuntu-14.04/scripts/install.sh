@@ -23,6 +23,7 @@ packages=(
     owncloud-client
 
     # Command Line Utilities
+    terminator
     htop
     realpath
     screen
@@ -49,6 +50,7 @@ packages=(
     vim vim-gtk
     virtualbox
     zeal
+    hipchat
 
     # Graphics
     gimp
