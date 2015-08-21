@@ -51,7 +51,10 @@ packages=(
     vim vim-gtk
     virtualbox
     zeal
+
+    #Communication
     hipchat
+    pidgin
 
     # Graphics
     gimp
