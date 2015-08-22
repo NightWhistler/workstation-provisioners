@@ -42,7 +42,7 @@ packages=(
     intellij
     build-essential
     filezilla
-    git git-svn hub
+    git git-svn hub gitk
     meld
     openjdk-7-jdk openjdk-7-jre
     sublime-text
