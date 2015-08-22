@@ -71,6 +71,12 @@ cp ~/.bashrc ~/.bashrc.backup
 echo 'export VISUAL="vim"' | tee --append "${HOME}/.bashrc"
 echo 'export EDITOR="${VISUAL}"' | tee --append "${HOME}/.bashrc"
 
+# Set a random hostname instead of 'vagrant-box'
+#export HOST=`rl -c1 hostnames.txt`
+#sudo hostname $HOST
+#sudo sh -c 'echo $HOST > /etc/hostname'
+#sudo sed -i s/vagrant-box/$HOST/ /etc/hosts 
+
 print_line "3. Install Ubuntu Privacy Fixes ###################################"
 # execute the fix ubuntu script to ensure additional privacy
 . ${lib}/fixubuntu.sh > /dev/null
