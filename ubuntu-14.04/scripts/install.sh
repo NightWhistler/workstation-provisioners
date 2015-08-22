@@ -55,6 +55,7 @@ packages=(
     #Communication
     hipchat
     pidgin pidgin-otr
+    skype
 
     # Graphics
     gimp
