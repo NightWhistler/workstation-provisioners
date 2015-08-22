@@ -54,7 +54,7 @@ packages=(
 
     #Communication
     hipchat
-    pidgin
+    pidgin pidgin-otr
 
     # Graphics
     gimp
