@@ -74,7 +74,7 @@ echo 'export EDITOR="${VISUAL}"' | tee --append "${HOME}/.bashrc"
 # Set a random hostname instead of 'vagrant-box'
 #export HOST=`rl -c1 hostnames.txt`
 #sudo hostname $HOST
-#sudo sh -c 'echo $HOST > /etc/hostname'
+#sudo HOST=$HOST sh -c 'echo $HOST > /etc/hostname'
 #sudo sed -i s/vagrant-box/$HOST/ /etc/hosts 
 
 print_line "3. Install Ubuntu Privacy Fixes ###################################"

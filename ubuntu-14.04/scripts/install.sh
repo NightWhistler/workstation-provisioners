@@ -28,6 +28,7 @@ packages=(
     realpath
     screen
     w3m
+    randomize-lines
 
     # Services
     openssh-server
