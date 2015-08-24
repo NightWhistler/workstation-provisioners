@@ -8,6 +8,9 @@ packages=(
     #Basic desktop
     ubuntu-desktop
 
+    #Firefox plugins
+    vimperator
+
     # System Utilities
     fluxgui
     gksu
