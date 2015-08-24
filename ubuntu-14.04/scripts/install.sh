@@ -42,20 +42,17 @@ packages=(
     gradle
     intellij
     build-essential
-    filezilla
     git git-svn hub gitk
     meld
     openjdk-7-jdk openjdk-7-jre
-    sublime-text
     subversion
-    vagrant
     vim vim-gtk
-    virtualbox
     zeal
 
     #Communication
     hipchat
     pidgin pidgin-otr
+    pidgin-indicator
     skype
 
     # Graphics
