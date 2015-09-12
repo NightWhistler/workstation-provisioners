@@ -10,6 +10,7 @@ packages=(
 
     #Firefox plugins
     vimperator
+    freshplayerplugin
 
     # System Utilities
     fluxgui
