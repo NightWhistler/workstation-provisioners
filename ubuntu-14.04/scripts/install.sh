@@ -41,7 +41,7 @@ packages=(
     docker
     java8
     groovy
-    scala
+    scala sbt
     maven
     gradle
     intellij
