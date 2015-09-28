@@ -71,7 +71,7 @@ packages=(
 
     # Other Utilities
     google-chrome
-    keepass2 mono-dmcs libmono-system-management4.0-cil
+    keepass2 mono-dmcs libmono-system-management4.0-cil xdotool
     p7zip-full
     remmina
     typecatcher
