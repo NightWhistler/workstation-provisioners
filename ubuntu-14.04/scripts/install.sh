@@ -14,7 +14,7 @@ packages=(
     freshplayerplugin
 
     # System Utilities
-    fluxgui
+    redshift-gtk
     gksu
     gnome-tweak-tool
     network-manager-openvpn-gnome
