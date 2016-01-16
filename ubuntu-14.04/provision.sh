@@ -30,7 +30,7 @@ print_line "1. Install System Updates #########################################"
 sudo -E apt-get update 
 
 # upgrade system packages
-sudo -E apt-get upgrade && sudo -E apt-get dist-upgrade -y 
+sudo -E apt-get upgrade -y && sudo -E apt-get dist-upgrade -y 
 
 
 print_line "2. Install Packages ###############################################"
