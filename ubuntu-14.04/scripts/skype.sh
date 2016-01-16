@@ -9,3 +9,6 @@ sudo apt-get install  -yq libc6:i386 libx11-6:i386 libxext6:i386 libxss1:i386 li
 wget -O skype.deb http://www.skype.com/go/getskype-linux-beta-ubuntu-64
 sudo dpkg -i skype.deb
 rm skype.deb
+
+#Fix ugly skype under i3
+echo "style=GTK+" >> /etc/xdg/Trolltech.conf
