@@ -18,7 +18,6 @@ packages=(
     gksu
     gnome-tweak-tool
     network-manager-openvpn-gnome
-    notifyosdconfig
     numix-gtk-theme
     numix-icon-theme-circle
     numix-wallpaper-notd

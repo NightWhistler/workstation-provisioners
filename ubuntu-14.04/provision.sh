@@ -27,10 +27,10 @@ cd ${current_directory}
 
 print_line "1. Install System Updates #########################################"
 # update system packages
-sudo -E apt-get update -qq > /dev/null
+sudo -E apt-get update 
 
 # upgrade system packages
-sudo -E apt-get upgrade -qq > /dev/null && sudo -E apt-get dist-upgrade -y > /dev/null
+sudo -E apt-get upgrade && sudo -E apt-get dist-upgrade -y 
 
 
 print_line "2. Install Packages ###############################################"
@@ -48,22 +48,6 @@ cd ${current_directory}
 
 # add bin to path
 echo 'export PATH=${PATH}:${HOME}/bin' | tee --append "${HOME}/.bashrc"
-
-# download icon packs
-#cd ./.icons
-#git clone https://github.com/NitruxSA/flattr-icons.git
-#git clone https://github.com/xcjs/flattr-dark.git
-#cd ..
-
-# download themes
-#cd ./.themes
-#git clone https://github.com/wfpaisa/Plane-Gtk3.git
-#git clone https://github.com/wfpaisa/Plane-Gtk3-White.git
-#cd ..
-
-# symlink the themes and icon packs into root directories
-#sudo ln -s ./.icons /root/.icons
-#sudo ln -s ./.themes /root/.themes
 
 # set vim as the default editor
 cp ~/.bashrc ~/.bashrc.backup
