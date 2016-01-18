@@ -7,7 +7,7 @@ packages=(
     
     #Basic desktop
     ubuntu-desktop
-    i3-wm i3lock j4-dmenu-desktop
+    i3
 
     #Firefox plugins
     vimperator
