@@ -57,7 +57,7 @@ echo 'export EDITOR="${VISUAL}"' | tee --append "${HOME}/.bashrc"
 echo 'set -o vi' | tee --append "${HOME}/.bashrc"
 
 # Set a random hostname instead of 'vagrant-box'
-export HOST=`rl -c1 hostnames.txt`
+export HOST=`unsort hostnames.txt | head -n1`
 sudo hostname $HOST
 sudo HOST=$HOST sh -c 'echo $HOST > /etc/hostname'
 sudo sed -i s/vagrant-box/$HOST/ /etc/hosts 

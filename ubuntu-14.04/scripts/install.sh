@@ -32,7 +32,7 @@ packages=(
     realpath
     screen
     w3m
-    randomize-lines
+    unsort
 
     # Services
     openssh-server
