@@ -27,6 +27,7 @@ packages=(
     owncloud-client
 
     # Command Line Utilities
+    zsh oh-my-zsh
     terminator
     htop
     realpath
