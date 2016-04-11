@@ -7,7 +7,7 @@ packages=(
     
     #Basic desktop
     ubuntu-desktop
-    i3
+    i3-desktop
 
     #Firefox plugins
     vimperator
@@ -40,16 +40,12 @@ packages=(
     # Development Tools
     docker
     java8
-    groovy
-    scala sbt
-    maven
-    gradle
+    sdkman
     intellij
     build-essential
     git git-svn hub gitk
     meld
     openjdk-7-jdk openjdk-7-jre
-    subversion
     vim vim-gtk
     zeal
 
