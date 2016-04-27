@@ -5,7 +5,7 @@
 echo "Installing Package: i3"
 
 # add ppa repository
-sudo -E add-apt-repository -y ppa:aacebedo/j4-dmenu-desktop > /dev/null
+#sudo -E add-apt-repository -y ppa:aacebedo/j4-dmenu-desktop > /dev/null
 
 # update packages repository
 sudo -E apt-get update -qq > /dev/null
