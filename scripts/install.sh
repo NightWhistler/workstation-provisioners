@@ -9,9 +9,8 @@ packages=(
     ubuntu-desktop
     i3-desktop
 
-    #Firefox plugins
-    vimperator
-    freshplayerplugin
+    #Fixes for things not working right
+    fix_systray fix_unity_settings
 
     # System Utilities
     redshift-gtk
@@ -26,6 +25,7 @@ packages=(
     unity-tweak-tool
     owncloud-client
     dnsmasq
+    pwgen
 
     # Command Line Utilities
     zsh oh-my-zsh
@@ -48,7 +48,6 @@ packages=(
     build-essential
     git git-svn hub gitk
     meld
-    openjdk-7-jdk openjdk-7-jre
     vim vim-gtk
     zeal
     vagrant virtualbox

@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -i s/OnlyShowIn=.*$// /usr/share/applications/unity-*-panel.desktop
+sudo sed -i s/OnlyShowIn=.*$// /usr/share/applications/unity-*-panel.desktop
