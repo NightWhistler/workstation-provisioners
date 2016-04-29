@@ -25,6 +25,7 @@ packages=(
     ubuntu-restricted-extras
     unity-tweak-tool
     owncloud-client
+    dnsmasq
 
     # Command Line Utilities
     zsh oh-my-zsh
@@ -39,7 +40,8 @@ packages=(
     openssh-server
 
     # Development Tools
-    docker
+    docker docker-compose
+    gdub
     java8
     sdkman
     intellij
@@ -49,6 +51,7 @@ packages=(
     openjdk-7-jdk openjdk-7-jre
     vim vim-gtk
     zeal
+    vagrant virtualbox
 
     #Communication
     hipchat

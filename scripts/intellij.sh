@@ -1,35 +1,15 @@
 #!/usr/bin/env bash
 
-# IntelliJ
-echo "Installing Package: intelliJ"
+echo " * Installing Package: IntelliJ IDEA"
 
-cd ~/
-mkdir -p bin
-cd ~/bin
-
-# JetBrains
-
-INTELLIJDOWNLOAD=ideaIU-15.0.2.tar.gz
-
+INTELLIJVERSION=$(version "intellij")
+INTELLIJDOWNLOAD=ideaIU-$INTELLIJVERSION.tar.gz
 INTELLIJINSTALL=intellij-ide
-
-wget https://download.jetbrains.com/idea/$INTELLIJDOWNLOAD
+mkdir -p "${HOME}/bin"
+cd "${HOME}/bin"
+wget https://download.jetbrains.com/idea/$INTELLIJDOWNLOAD > /dev/null
 mkdir $INTELLIJINSTALL
-tar -zxvf $INTELLIJDOWNLOAD --strip-components=1 -C intellij-ide
-
+tar -zxvf $INTELLIJDOWNLOAD --strip-components=1 -C intellij-ide  > /dev/null
 rm $INTELLIJDOWNLOAD
-
-# Android SDK
-
-#ANDROIDSDKDOWNLOAD=android-sdk_r24.1.2-linux.tgz
-
-#wget http://dl.google.com/android/$ANDROIDSDKDOWNLOAD
-#tar -zxvf $ANDROIDSDKDOWNLOAD
-
-#rm $ANDROIDSDKDOWNLOAD
-
-# Setup symlinks to make applications executable from path (Ubuntu ~/.profile
-# adds ~/bin to path if it exists.
-
 ln -s intellij-ide/bin/idea.sh intellij
 

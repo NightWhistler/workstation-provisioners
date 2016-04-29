@@ -15,13 +15,12 @@ export DEBIAN_FRONTEND=noninteractive
 # /var/tmp files are supposed to persist even on reboot
 tmp="/var/tmp"
 
-helpers="${current_directory}/helpers"
 lib="${current_directory}/lib"
 scripts="${current_directory}/scripts"
 
 
 # load utility functions
-. ${helpers}/utilities.sh > /dev/null
+. ${lib}/utilities.sh > /dev/null
 cd ${current_directory}
 
 
@@ -39,7 +38,7 @@ sudo -E debconf-set-selections <<< "ttf-mscorefonts-installer msttcorefonts/acce
 
 # create commonly required directories
 cd ${HOME}
-mkdir -p "bin" ".icons" ".themes" "Apps" "Source"
+mkdir -p "bin" ".icons" ".themes" "Apps" "Source" "projects"
 
 # run the package installation script
 #. ${scripts}/install.sh > /dev/null
@@ -57,10 +56,10 @@ echo 'export EDITOR="${VISUAL}"' | tee --append "${HOME}/.bashrc"
 echo 'set -o vi' | tee --append "${HOME}/.bashrc"
 
 # Set a random hostname instead of 'vagrant-box'
-export HOST=`unsort hostnames.txt | head -n1`
-sudo hostname $HOST
-sudo HOST=$HOST sh -c 'echo $HOST > /etc/hostname'
-sudo sed -i s/vagrant-box/$HOST/ /etc/hosts 
+# export HOST=`unsort hostnames.txt | head -n1`
+# sudo hostname $HOST
+# sudo HOST=$HOST sh -c 'echo $HOST > /etc/hostname'
+# sudo sed -i s/vagrant-box/$HOST/ /etc/hosts 
 
 print_line "3. Install Ubuntu Privacy Fixes ###################################"
 # execute the fix ubuntu script to ensure additional privacy
