@@ -49,6 +49,7 @@ packages=(
     git git-svn hub gitk
     meld
     vim vim-gtk
+    myrepos
     zeal
     vagrant virtualbox
 
