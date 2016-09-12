@@ -35,6 +35,7 @@ packages=(
     screen
     w3m
     unsort
+    nmap
 
     # Services
     openssh-server
@@ -47,6 +48,7 @@ packages=(
     intellij
     build-essential
     git git-svn hub gitk
+    myrepos
     meld
     vim vim-gtk
     zeal
