@@ -51,6 +51,7 @@ packages=(
     myrepos
     meld
     vim vim-gtk
+    myrepos
     zeal
     vagrant virtualbox
 
